@@ -1,6 +1,6 @@
 
 import Nav from 'react-bootstrap/Nav'
-import NavBar from 'react-bootstrap/NavBar'
+// import NavBar from 'react-bootstrap/NavBar'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
@@ -19,14 +19,14 @@ function App() {
   return (
     <Router>
     <div className="App">
-        <NavBar bg="dark" variant="dark">
+        <nav className="navbar bg-dark" bg="dark" variant="dark">
           <Container>
 
-            <NavBar.Brand>
+            <a className="navbar-brand" >
               <Link to={"/create-student"} className="nav-link">
                 React MERN stack CRUD
               </Link>
-            </NavBar.Brand>
+            </a>
 
             <Nav className="justify-content-end">
               
@@ -46,7 +46,7 @@ function App() {
 
           </Container>
 
-        </NavBar>
+        </nav>
 
       
       <Container>
